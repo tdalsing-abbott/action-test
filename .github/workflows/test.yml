@@ -1,0 +1,18 @@
+name: Test
+
+on:
+  push: 
+    branches:
+      - "mster"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: cat
+        run: cat test.json
+
+      # - name: 'Azure login'
+      #   uses: azure/login@v1
+      #   with:
+      #     creds: ${{ secrets.AZURE_CREDENTIALS }}
