@@ -10,7 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: cat
-        run: cat test.json
+        run: |
+          pwd
+          ls -l ./
+          cat test.json
 
       # - name: 'Azure login'
       #   uses: azure/login@v1
