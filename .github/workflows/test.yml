@@ -15,7 +15,7 @@ jobs:
       - name: cat
         run: cat test.json
 
-      # - name: 'Azure login'
-      #   uses: azure/login@v1
-      #   with:
-      #     creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: 'Azure login'
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
