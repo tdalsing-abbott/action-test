@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: cat
         run: |
+          set -ex
           pwd
           ls -l ./
           cat test.json
