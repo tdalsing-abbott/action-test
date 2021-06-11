@@ -9,12 +9,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: 'Checkout Repo'
+        uses: actions/checkout@v2
+
       - name: cat
-        run: |
-          set -ex
-          pwd
-          ls -l ./
-          cat test.json
+        run: cat test.json
 
       # - name: 'Azure login'
       #   uses: azure/login@v1
