@@ -11,8 +11,8 @@ provider "azurerm" {
   skip_provider_registration = true
 }
 
-resource "azurerm_api_management" "example_apim" {
-  name                = "tdalsing-example-apim"
+resource "azurerm_api_management" "example_apim_2" {
+  name                = "tdalsing-example-apim-2"
   location            = "East US"
   resource_group_name = "dev-rg"
   publisher_name      = "My Company"
